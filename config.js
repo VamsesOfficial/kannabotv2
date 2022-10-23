@@ -44,10 +44,10 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 /*============== SOCIAL ==============*/
 
 // Wajib diisi ya kak!, kalo ga punya biarin aja, biar ada creditsnya :v
-global.sig = 'https://www.instagram.com/ktgakuma'
-global.sgh = 'https://github.com/Jikarinka'
-global.sgc = 'https://chat.whatsapp.com/FF1Bd1U0FHu42rfz6uplbn'
-global.sdc = " "
+global.sig = 'https://www.instagram.com/ketutagus404'
+global.sgh = 'https://github.com/VamsesOfficial'
+global.sgc = 'https://chat.whatsapp.com/JxI53XkvnnYHP2D1eIZ8fu'
+global.sdc = "-"
 global.snh = 'https://nhentai.net/g/365296/'
 
 /*============== PAYMENT ==============*/
@@ -59,8 +59,8 @@ global.ppulsa2 = '-'
 global.psaweria = '-'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6281336990781'
-global.nomorown = '6285334930628'
+global.nomorbot = '19152666222'
+global.nomorown = '6289508503105'
 global.namebot = 'Chonix Bot'
 global.nameown = 'Vamses'
 
@@ -70,7 +70,7 @@ global.owner = [
   ['6285738639969'],
   ['6285738639969'],
   ['6285738639969'],
-  ['19152666222', 'Vamses', true]
+  ['6289508503105', 'Vamses', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -125,9 +125,9 @@ global.author = global.wm
 
 
 /*============== LOGO ==============*/
-global.thumb = 'https://telegra.ph/file/c73f47b440241b66cb9d3.jpg' //Main Thumbnail
-global.thumb2 = 'https://telegra.ph/file/c73f47b440241b66cb9d3.jpg'
-global.thumbbc = 'https://telegra.ph/file/d389f4acafac741f6592c.jpg' //For broadcast
+global.thumb = ''https://telegra.ph/file/faa2d78e288d5adfd1e7c.jpg //Main Thumbnail
+global.thumb2 = 'https://telegra.ph/file/faa2d78e288d5adfd1e7c.jpg'
+global.thumbbc = 'https://telegra.ph/file/faa2d78e288d5adfd1e7c.jpg' //For broadcast
 global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
