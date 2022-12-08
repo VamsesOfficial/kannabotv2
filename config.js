@@ -125,7 +125,7 @@ global.author = global.wm
 
 
 /*============== LOGO ==============*/
-global.thumb = ''https://telegra.ph/file/faa2d78e288d5adfd1e7c.jpg //Main Thumbnail
+global.thumb = 'https://telegra.ph/file/faa2d78e288d5adfd1e7c.jpg' //Main Thumbnail
 global.thumb2 = 'https://telegra.ph/file/faa2d78e288d5adfd1e7c.jpg'
 global.thumbbc = 'https://telegra.ph/file/faa2d78e288d5adfd1e7c.jpg' //For broadcast
 global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
