@@ -30,7 +30,7 @@ import {
   mongoDBV2
 } from './lib/mongoDB.js';
 const {
-  useSingleFileAuthState,
+  useMultiFileAuthState,
   DisconnectReason
 } = await import('@adiwajshing/baileys')
 
@@ -87,12 +87,12 @@ loadDatabase()
 
 global.authFile = `${opts._[0] || 'kannabot'}.data.json`
 console.log(`Load AuthFile from ${authFile}`)
-const { state, saveState } = useSingleFileAuthState(global.authFile)
+const { state, saveCreds } = await useMultiFileAuthState(global.authFile)
 
 const connectionOptions = {
   printQRInTerminal: true,
   auth: state,
-  // logger: pino({ level: 'trace' })
+  logger: pino({ level: 'silent' })
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -176,7 +176,7 @@ global.reloadHandler = async function (restatConn) {
   conn.groupsUpdate = handler.groupsUpdate.bind(global.conn)
   conn.onDelete = handler.deleteUpdate.bind(global.conn)
   conn.connectionUpdate = connectionUpdate.bind(global.conn)
-  conn.credsUpdate = saveState.bind(global.conn)
+  conn.credsUpdate = saveCreds.bind(global.conn)
 
   conn.ev.on('messages.upsert', conn.handler)
   conn.ev.on('group-participants.update', conn.participantsUpdate)
